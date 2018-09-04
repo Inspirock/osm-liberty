@@ -6,10 +6,10 @@
     "mapbox:type": "template"
   },
   "sources": {
-    "natural_earth_shaded_relief": {
+    "satellite": {
       "maxzoom": 6,
       "type": "raster",
-      "url": "mbtiles://{ne-shaded}"
+      "url": "mbtiles://{satellite-raster}"
     },
     "openmaptiles": {
       "type": "vector",
@@ -29,7 +29,7 @@
     {
       "id": "natural_earth",
       "type": "raster",
-      "source": "natural_earth_shaded_relief",
+      "source": "satellite",
       "maxzoom": 6,
       "layout": {
         "visibility": "visible"
@@ -40,7 +40,7 @@
           "stops": [
             [
               0,
-              0.6
+              0.4
             ],
             [
               6,
